@@ -6,8 +6,8 @@ public class CoinTaskLoop {
 
 	public static void main(String args[]) {
 		
-	Scanner newScanner = new Scanner(System.in);
 
+	Scanner newScanner = new Scanner(System.in);
 
 	System.out.println("Enter the price of the item in £'s: ");
 	double price = newScanner.nextDouble();
@@ -26,13 +26,13 @@ public class CoinTaskLoop {
 		int twoPence=0;
 		int penny=0;
 		double change;
-		
 
 		change = paid - price;
+		
 		System.out.println("You spent £" + price + " paid for with £" + paid);
 		
 		while (change > 0) {
-	
+
 			if (change>=20 ) {
 				twentyPounds++;
 				change-=20;
