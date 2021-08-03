@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class ScanCalc {
 
-	
+	// Limited to 2 numbers currently - would like to have an endless amount
+	// Limited to 1 operator currently - change to 2
 
 	    public static void main(String[] args)
 	    {
-	        // two number sums
+	        // two number sums 
 	        double num1, num2;
 	  
 	        // installed scanner and created sc
