@@ -6,7 +6,7 @@ public class CoinTask {
 
 	static int changeTotal, penny, twoPence, fivePence, tenPence, twentyPence, fiftyPence, onePound, twoPound,
 			fivePound, tenPound, twentyPound;
-	static double payed, price;
+	static double paid, price;
 
 //changed the static int to static double, idiot
 	public static void main(String args[]) {
@@ -15,13 +15,13 @@ public class CoinTask {
 		Scanner newScanner = new Scanner(System.in);
 
 //info needed from console input through newScanner
-		System.out.println("Enter the price of the item in £'s ");
+		System.out.println("Enter the price of the item in £'s: ");
 		price = newScanner.nextDouble();
-		System.out.println("Enter amount taken for payment in £'s ");
-		payed = newScanner.nextDouble();
+		System.out.println("Enter amount taken for payment in £'s: ");
+		paid = newScanner.nextDouble();
 
 		int priceInt = (int) (price * 100);
-		int payedInt = (int) (payed * 100);
+		int payedInt = (int) (paid * 100);
 
 // working from the lowest denomination define each coin/item as a penny
 		penny = 1;
@@ -41,10 +41,14 @@ public class CoinTask {
 // start the change counter 		
 		int[] changeCount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 // if statements to determine failed / default outputs
-		if (payed > price) {
+		if (paid == 3.50 ) {
+			System.out.println("TREEE FIDDY!!! GOD DAMN LOCH NESS MONSTER");
+		}
+		
+		if (paid > price) {
 			changeTotal = payedInt - priceInt;
 		}
-		if (price > payed) {
+		if (price > paid) {
 			System.out.println("You need a bit more dollar brother");
 			System.exit(1);
 		}
