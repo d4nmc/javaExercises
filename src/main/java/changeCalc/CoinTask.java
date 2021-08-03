@@ -62,16 +62,28 @@ public class CoinTask {
 		}
 // results to provide answer
 		System.out.println("Your change can be broken down as follows: ");
+		System.out.println("=======================================");
 		System.out.println("Twenty Squids: " + changeCount[10]);
+		System.out.println("=======================================");
 		System.out.println("Tenners: " + changeCount[9]);
+		System.out.println("=======================================");
 		System.out.println("Deep Sea Divers: " + changeCount[8]);
+		System.out.println("=======================================");
 		System.out.println("Two pounds: " + changeCount[7]);
+		System.out.println("=======================================");
 		System.out.println("Squids: " + changeCount[6]);
+		System.out.println("=======================================");
 		System.out.println("Fiddies: " + changeCount[5]);
+		System.out.println("=======================================");
 		System.out.println("20p: " + changeCount[4]);
+		System.out.println("=======================================");
 		System.out.println("10p: " + changeCount[3]);
+		System.out.println("=======================================");
 		System.out.println("5p: " + changeCount[2]);
+		System.out.println("=======================================");
 		System.out.println("Tuppence: " + changeCount[1]);
+		System.out.println("=======================================");
 		System.out.println("Penny: " + changeCount[0]);
+		System.out.println("=======================================");
 	}
 }
