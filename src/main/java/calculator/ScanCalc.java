@@ -17,43 +17,44 @@ public class ScanCalc {
 	        System.out.println("Enter the numbers");
 	  
 	        // using the scanner in console for inputs - sc = new instance of scanner in this class/method
+	        
 	        num1 = sc.nextDouble();
 	  
 	        num2 = sc.nextDouble();
 	  
 	        System.out.println("(add / subtract / multiply /divide)");
 	  
-	        char op = sc.next().charAt(0);
+	        char operator = sc.next().charAt(0);
 	  
-	        double o = 0;
+	        double answer = 0;
 	  
-	        switch (op) {
+	        switch (operator) {
 	  
 	        // ADD
 	        case '+':
 	  
-	            o = num1 + num2;
+	            answer = num1 + num2;
 	  
 	            break;
 	  
 	        // SUBTRACT
 	        case '-':
 	  
-	            o = num1 - num2;
+	            answer = num1 - num2;
 	  
 	            break;
 	  
 	        // MULTIPLY
 	        case '*':
 	  
-	            o = num1 * num2;
+	            answer = num1 * num2;
 	  
 	            break;
 	  
 	        // DIVIDE
 	        case '/':
 	  
-	            o = num1 / num2;
+	            answer = num1 / num2;
 	  
 	            break;
 	  
@@ -65,13 +66,13 @@ public class ScanCalc {
 	            break;
 	        }
 	  
-	        System.out.println("Answer = ");
+	        System.out.println("Answer =");
 	  
 	        System.out.println();
 	  
 	        // FORMATTING FOR OUTPUT
-	        System.out.println(num1 + " " + op + " " + num2
-	                           + " = " + o);
+	        System.out.println(num1 + " " + operator + " " + num2
+	                           + " = " + answer);
 	    }
 	}
 	
