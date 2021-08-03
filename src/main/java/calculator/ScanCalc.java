@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ScanCalc {
 
 	// Limited to 2 numbers currently - would like to have an endless amount
-	// Limited to 1 operator currently - change to 2
+	// Limited to 1 operator currently - change to 2+	
 
 	    public static void main(String[] args)
 	    {
