@@ -13,7 +13,8 @@ public class CoinTaskLoop {
 	double price = newScanner.nextDouble();
 	System.out.println("Enter amount taken for payment in £'s: ");
 	double paid = newScanner.nextDouble();	
-	
+		
+		int fiftyPounds=0;
 		int twentyPounds=0;
 		int tenPounds=0;
 		int fivePounds=0;
@@ -25,18 +26,20 @@ public class CoinTaskLoop {
 		int fivePence=0;
 		int twoPence=0;
 		int penny=0;
-		double change;
-
-		change = paid - price;
+		double change = paid - price;
 		
-		System.out.println("You spent £" + price + " paid for with £" + paid);
+	System.out.println("You spent £" + price + " paid for with £" + paid);
 		
 		while (change > 0) {
 
-			if (change>=20 ) {
+			if (change>=50 ) {
+				fiftyPounds++;
+				change-=50;
+			}	
+			else if (change>=20 ) {
 				twentyPounds++;
 				change-=20;
-				
+					
 			}
 			else if (change>=10 ) {
 				tenPounds++;
@@ -89,7 +92,7 @@ public class CoinTaskLoop {
 				
 			}
 		}	
-		
+		System.out.println("£50 x " + fiftyPounds);
 		System.out.println("£20 x " + twentyPounds);
 		System.out.println("£10 x " + tenPounds);
 		System.out.println("£5 x " + fivePounds);
