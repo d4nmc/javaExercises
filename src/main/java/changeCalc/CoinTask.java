@@ -42,7 +42,8 @@ public class CoinTask {
 		int[] changeCount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 // if statements to determine failed / default outputs
 		if (paid == 3.50 ) {
-			System.out.println("TREEE FIDDY!!! GOD DAMN LOCH NESS MONSTER");
+			System.out.println("THREE FIDDY!!! GOD DAMN LOCH NESS MONSTER");
+			System.out.println("=======================================");
 		}
 		
 		if (paid > price) {
