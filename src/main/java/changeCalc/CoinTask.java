@@ -42,6 +42,7 @@ public class CoinTask {
 		int[] changeCount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 // if statements to determine failed / default outputs
 		if (paid == 3.50 ) {
+			System.out.println("=======================================");
 			System.out.println("THREE FIDDY!!! GOD DAMN LOCH NESS MONSTER");
 			System.out.println("=======================================");
 		}
@@ -62,6 +63,7 @@ public class CoinTask {
 			}
 		}
 // results to provide answer
+		System.out.println("                                           ");
 		System.out.println("Your change can be broken down as follows: ");
 		System.out.println("=======================================");
 		System.out.println("Twenty Squids: " + changeCount[10]);
